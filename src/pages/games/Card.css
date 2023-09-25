@@ -1,0 +1,16 @@
+.card-main-p{height: 100%}
+.info-card-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timer{
+    text-align: center;
+    width: 80px;
+    border: 1px solid #dee0e2;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    background-color: #ebebeb;color:black;
+}
+.timer:hover{color:#7c3ddc;}
