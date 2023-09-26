@@ -1,0 +1,11 @@
+
+.search-game-up.dark, .search-game-down.dark{ background-color:#262c32;}
+.search-game-up.light, .search-game-down.light{background-color:#e5e7e9;}
+
+.search-game-up.dark, .search-game-up.light{
+    border-radius: 15px 15px 0 0;
+}
+.search-game-down.dark, .search-game-down.light{
+    border-radius: 0 0 15px 15px;
+    margin-top: 2px;
+}
