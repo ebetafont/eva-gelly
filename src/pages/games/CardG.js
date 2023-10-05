@@ -16,7 +16,7 @@ export default function CardG(){
         <>
             {
                games?.slice(0,8).map((obj)=>(
-                    <CardPoster id={obj.id} name={obj.name} background_image={obj.background_image} />
+                    <CardPoster key={obj.id} id={obj.id} name={obj.name} background_image={obj.background_image} />
                 )) 
 
 

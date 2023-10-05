@@ -7,10 +7,10 @@ export function SearchG(){
 
     return(
         <>
-            <div className={`search-game-up ${contextData}`}>
+            <div className={`search-game-up ${contextData.themeSite}`}>
                 <p>Some stuf</p>
             </div>
-            <div className={`search-game-down ${contextData}`}>
+            <div className={`search-game-down ${contextData.themeSite}`}>
                 <p>Some stuf</p><p>Some stuf</p><p>Some stuf</p><p>Some stuf</p><p>Some stuf</p>
             </div>
         </>

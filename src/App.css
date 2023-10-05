@@ -4,8 +4,9 @@ body{
 }
 /*Day Night*/
 .tdn-button{width:36px;height:36px;padding:4px;border-radius:50%;}
-.light{background-color: #dee0e2;color: #262c32;}
-.dark{background-color: #262c32;color: #dee0e2;}
+
+.boddy-g.light{background-color: #dee0e2;color: #262c32;}
+.boddy-g.dark{background-color: #262c32;color: #dee0e2;}
 
 .container{
   text-align: center;
@@ -20,9 +21,6 @@ body{
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;}
-.nav .nav-i{width:18%;padding:0;margin:0;list-style:none;display:flex;gap:1rem;justify-content:space-evenly;max-width: 200px;min-width: 150px;}
-.bigname-and-toggle{
-}
 .nav a, .site-home{text-decoration:none;}
 .nav .site-home.light{color:#7c3ddc;}
 .nav .site-home.dark{color:#ea864b;}
@@ -32,6 +30,8 @@ body{
 .nav .site-home:hover{color:#fff;background-color: #777;}
 
 .nav a:hover{background-color: #353434; color:#dee0e2}
+/*------------------------------------*/
+
 /*------------------------------------*/
 .card-main-board{
   width: 100%;

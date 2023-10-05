@@ -15,7 +15,7 @@ export function SingleG(){
         <>{
             games?.map((obj)=>(
                 obj.id === randomNumber ?
-                    <CardMain id={obj.id} name={obj.name} background_image={obj.background_image} />
+                    <CardMain key={obj.id} name={obj.name} background_image={obj.background_image} />
                 : ""
             ))
         }</>

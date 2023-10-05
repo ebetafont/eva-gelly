@@ -3,7 +3,11 @@ import {createContext, useState} from 'react';
 export const DataContext = createContext();
 
 export function DataContextProvider(props){ //Container de globals
-    const [contextData, setContextData] = useState('light'); //mi hooc global
+
+    //const user = JSON.parse(sessionStorage.getItem('logued_user'))
+    //console.log(user.length)
+
+    const [contextData, setContextData] = useState({themeSite: 'light', logedUser:null}); //mi hooc global
     
     const valor = {contextData, setContextData};
 

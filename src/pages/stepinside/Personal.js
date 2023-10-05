@@ -10,12 +10,12 @@ export function Personal({mystyle}){
     return(<>
         {mystyle==="si" ? 
         (<ul className='nav-c'>
-            <MyLink to="/create-account" className={`create-a ${contextData} ${mystyle}`}>Create account</MyLink>
-            <MyLink to="/login" className={`login-a ${contextData}`}>Sign in</MyLink>
+            <MyLink to="/create-account" className={`create-a ${contextData.themeSite} ${mystyle}`}>Create account</MyLink>
+            <MyLink to="/login" className={`login-a ${contextData.themeSite}`}>Sign in</MyLink>
         </ul>) :
         (<ul className='nav-d'>
-            <MyLink to="/login" className={`login-a ${contextData}`}>Sign in</MyLink>
-            <MyLink to="/create-account" className={`create-a ${contextData} ${mystyle}`}>Create account</MyLink>            
+            <MyLink to="/login" className={`login-a ${contextData.themeSite}`}>Sign in</MyLink>
+            <MyLink to="/create-account" className={`create-a ${contextData.themeSite} ${mystyle}`}>Create account</MyLink>            
         </ul>)}</>)
 }
 

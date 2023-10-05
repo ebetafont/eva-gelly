@@ -3,7 +3,7 @@ import {useContext} from 'react';
 import {DataContext} from '../../globals/dataContext';
 import { SingleG } from '../games/SingleG.js';
 import { SearchG } from '../games/SearchG.js';
-import { NavPlatform } from './NavPlatform.js';
+import { Navigator } from '../../Navigator/Navigator.js';
 
 export function MainBoard(){
     const {contextData} = useContext(DataContext);
@@ -11,20 +11,21 @@ export function MainBoard(){
     return(
         <>
             <div className='card-main-board'>
-                <div className={`main-p main-p-b-a ${contextData}`}> 
-                    <h1>start <spam>streaming</spam> games differently</h1>
-                    <p>gamor now has <spam>streaming party</spam> platform</p>
+                <div className={`main-p main-p-b-a ${contextData.themeSite}`}> 
+                    <h1>start <span>streaming</span> games differently</h1>
+                    <p>gamor now has <span>streaming party</span> platform</p>
                     <Personal mystyle="si" />
                 </div>
                 
-                <div className={`main-p main-p-b-b ${contextData}`}>
+                <div className={`main-p main-p-b-b ${contextData.themeSite}`}>
                     <SingleG />  
                 </div>
 
-                <div className={`main-p main-p-b-c ${contextData}`}> 
-                    <h2><spam>01.</spam> Choose Platform</h2>
-                    <NavPlatform/>
-                    <h2><spam>02.</spam> Searching Game</h2>
+                <div className={`main-p main-p-b-c ${contextData.themeSite}`}> 
+                    <h2><span>01.</span> Choose Platform</h2>
+                    <Navigator className="nav-platform" />
+
+                    <h2><span>02.</span> Searching Game</h2>
                     <SearchG />
                 </div>
             </div>
