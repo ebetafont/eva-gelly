@@ -1,7 +1,18 @@
-body{
-  padding: 0;
-	margin: 0;
+[data-theme="light"]{
+  --primary:#7c3ddc;
+  --primary-counter:#ea864b;
+  --color:#2a3036;
+  --background-color: #e5e7e9;
 }
+[data-theme="dark"]{
+  --primary:#ea864b;
+  --primary-counter:#7c3ddc;
+  --color:#dee0e2;
+  --background-color: #262c32;
+}
+/*--------------------------------------------------*/
+*{margin:0;padding:0;box-sizing:border-box;}
+
 /*Day Night*/
 .tdn-button{width:36px;height:36px;padding:4px;border-radius:50%;}
 
